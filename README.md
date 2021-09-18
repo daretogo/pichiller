@@ -10,3 +10,16 @@ Start here with our [first one wire readings](1-first-one-wire-readings.md) wher
 
 From there, we move on [to installing Prometheus on our pi and setting it to collect the metrics](2-install-prometheus-collect-temps.md) from the service we just set up. 
 
+Now that we're getting temperature metrics into Prometheus - we can ask prometheus to send those metrics up to grafana cloud.   Grafana cloud has a free tier that seems to be sufficient for these purposes. 
+
+By [sending my metrics over to grafana cloud](3-sending-metrics-to-grafana-cloud.md), I'll be able to plot them visually on a dashboard that I can access from my phone even when I'm out and about, and they have alerting rules that tie into discord so I can get alerts if a temp is too high or too low (or if it's not logging data). 
+
+
+The core idea of how you make a Window AC unit cool down to refridgerator type temperatures is that you "lie" to the Window unit by convincing it that it's actually warmer than it really is.  You do that by finding the temperature probe on the AC unit - and mating it up with a little heater. 
+
+So what I did was I ordered some 3W 100Ohm resistors which are these super fat little resistors, and after some experimenting I found that if I hooked up this old 9v 500ma power supply through it then it would heat up to the 100F+ range, but not get too crazy hot.  I did also get a little real world experience with this and a 7v power supply was insufficient.  
+
+So anyways - we need to be able to swtich power to this "heater" on and off so as to be able to heat up the Window AC probe to keep it running even when the temp gets below like 62 where it wants to shut off. 
+
+Another thing it seems that it would be good to control is the power to the AC unit itself. 
+I've got these Sainsmart 2 relay modules, so we're gonna [install a two relay module](4-install-two-relay-module.md) one side will switch the heater probe, the other will power the AC itself. 
