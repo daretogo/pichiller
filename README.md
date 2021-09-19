@@ -37,3 +37,7 @@ We also were curious about humidity data, so we've got a DHT22 set up at the end
 
 How it currently sits on my desk half in a cigar box:
 ![pic of the current setup on the desk](/images/pichiller_wired.jpg)
+
+
+The more I think about it the more that I want to have at least one door sensor that gets set up near the main door to alert for cases of the door getting left open.  
+I picked up a 10 pack of these very cheap magnetic door sensors lets [get a metric from the door sensor to see if it's open or closed](6-door-sensor-open-or-closed-metric.md)
