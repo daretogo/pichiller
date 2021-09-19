@@ -27,3 +27,13 @@ Another thing it seems that it would be good to control is the power to the AC u
 I've got these Sainsmart 2 relay modules, so we're gonna [install a two relay module](4-install-two-relay-module.md) one side will switch the heater probe, the other will power the AC itself. 
 
 I'm also somewhat interested in humidity data inside my cooler, eventually that could be more important if I was to get into aging cheeses or something but at the very least I'm thinking it'd be good to ensure the humidity level doesn't get too high as that could promote rot or mold.  I picked up a DHT22 sensor for getting this data.  The DHT22 will actually report both temperature and humidity so this will be our sixth temperature sensor but first humidity. So lets [add this dht22 sensor and get data from it](5-report-humidity-from-dh22-sensor.md)
+
+
+Alright, so at this point we've got 1 DS18B20 sensor on a little pcb that will be close to the electronics, 1 DS18B20 sensor mated to the "heater", and 3 more loose ones for measuring intake and ambiant air. 
+We've got a couple relays set up and can control them with simple python scripts to indpendently control a set of outlets. This will be used to turn on/off the AC itself and the heater power supply. 
+We also were curious about humidity data, so we've got a DHT22 set up at the end of about a 4-5 ft lead and capturing humidity data onto our grafana cloud dashboard:
+
+![grafana cloud dashboard with all temps reporting in](/images/grafana_cloud_dashboard.jpg)
+
+How it currently sits on my desk half in a cigar box:
+![pic of the current setup on the desk](/images/pichiller_wired.jpg)
