@@ -9,7 +9,7 @@ I'm doing this on a fresh Raspbian Lite install on a 64gb SD card, running in a 
 Perform an apt-get update and upgrade, enable ssh, and enable one-wire in the raspi-config.  
 ```
 sudo apt update -y  
-sudo apt upgrae -y 
+sudo apt upgrade -y 
 sudo raspi-config  #This launches the raspi config, inside here you enable SSH and turn on one-wire. 
 ```
 
