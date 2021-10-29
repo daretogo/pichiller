@@ -81,6 +81,9 @@ And then to add it to the prometheus config and reboot
       - targets: ["localhost:9090","localhost:8001", "localhost:8002", "localhost:8003"]
 ```
 
+Alright, so now we have all these metrics, we can build a cool dashboard with them.
+Let's hook all this up to grafana cloud and create a cool dashboard
+
 
 
 
