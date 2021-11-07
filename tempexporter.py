@@ -97,7 +97,7 @@ def main():
         read_sensor6()
         read_sensor7()
         read_sensor8()
-        time.sleep(10)
+        time.sleep(1)
       except:
         pass
 main()
